@@ -1,24 +1,30 @@
-.App {
+body{
+  color: #ffffff;
   text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  background: #99bfcf url("landscape.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+h1 {
+  font-weight: 100;
+  font-size: 2.6em;
+}
+h1.header{
+  padding:15px;
+  font-size: 1.6em;
+  color: rgb(231, 76, 60);
+  text-shadow: none;
+  font-weight: 100;
+}
+.jumbotron {
+  background: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#contentarea {
+  background: rgba(51, 51, 51, 0.12);
+  padding:3px;
 }
