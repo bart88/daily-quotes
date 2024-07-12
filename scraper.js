@@ -16,5 +16,5 @@ xray('http://www.goodreads.com/quotes/tag/love', 'div.quoteDetails', [{
   author: '.quoteText a'
 }])
   .paginate('a.next_page[rel="next"]@href')
-  .limit(10)
-  .write('src/quotes.json');
+  .limit(50)
+  .write('src/assets/quotes.json');
