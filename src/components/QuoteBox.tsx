@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useMemo, useState } from "react";
 import { Quote } from "../models/quote";
 import quotes_json from "../assets/quotes.json";
 import JSConfetti from "js-confetti";
@@ -32,15 +32,11 @@ export default function QuoteBox({ children }: QuoteBoxProps) {
   // Create inital state
   const [index, setIndex] = useState(generateIndex(0));
   const [quote, setQuote] = useState<Quote>(pickQuote(index));
-  const [confetti, setConffetti] = useState<JSConfetti>();
 
-  useEffect(() => {
-    const jsConfetti = new JSConfetti();
-    setConffetti(jsConfetti);
-  }, []);
+  const jsConfetti = useMemo(() => new JSConfetti(), []);
 
   const generateNewQuote = () => {
-    confetti?.addConfetti();
+    jsConfetti?.addConfetti();
 
     const newIndex = generateIndex(index);
     const newQuote = pickQuote(newIndex);

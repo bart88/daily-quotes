@@ -6,7 +6,7 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen">
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen overflow-y-auto">
       <Header />
       <QuoteBox>
         {({ quote, generateNewQuote }) => (
