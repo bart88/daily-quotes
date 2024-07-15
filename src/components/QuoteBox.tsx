@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useMemo, useState } from "react";
+import { ReactNode, useMemo, useState } from "react";
 import { Quote } from "../models/quote";
 import quotes_json from "../assets/quotes.json";
 import JSConfetti from "js-confetti";
