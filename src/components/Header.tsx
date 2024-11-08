@@ -10,7 +10,7 @@ export default function Header() {
           one I love
         </span>
       </h1>
-      <p className="text-lg font-normal text-gray-50 lg:text-xl dark:text-gray-400">
+      <p className="text-lg font-normal text-gray-50 lg:text-xl dark:text-gray-200">
         {notice}
       </p>
     </div>
